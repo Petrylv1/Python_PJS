@@ -1,4 +1,5 @@
 # Zadanie 1
+```python
 print("Lista 1 zad 1")
 print("==========================================")
 print("Kalkulator objętości i pól powierzni brył")
@@ -45,4 +46,4 @@ if(wybor=='c'):
     Wtedy nie trzeba używać metody format a także konkatenacji łańcuchów znaków.
     
 '''
-    
+```    
