@@ -1,7 +1,7 @@
 import csv
 import random
 
-def generate_random_data(quantity):
+def losowanie_danych(ilosc):
     data = []
     with open('imiona.txt', encoding="utf-8") as f:
         imiona = f.read().splitlines()
@@ -13,7 +13,7 @@ def generate_random_data(quantity):
         miasta = f.read().splitlines()
     with open('kraje.txt', encoding="utf-8") as f:
         kraje = f.read().splitlines()
-    for i in range(quantity):
+    for i in range(ilosc):
         imie = random.choice(imiona)
         nazwisko = random.choice(nazwiska)
         pesel = ''.join([str(random.randint(0, 9)) for _ in range(11)])
@@ -29,5 +29,5 @@ def generate_random_data(quantity):
         writer.writerows(data)
 
 # wywołanie funkcji z ilością danych podaną przez użytkownika
-quantity = int(input("Podaj ilość danych, które chcesz wygenerować: "))
-generate_random_data(quantity)
+ilosc = int(input("Podaj ilość danych, które chcesz wygenerować: "))
+losowanie_danych(ilosc)
