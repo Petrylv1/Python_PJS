@@ -5,7 +5,7 @@ city = input("Podaj nazwę miasta: ")
 
 forecast = input("Czy chcesz pogodę na dzisiaj czy na jutro? (dzisiaj/jutro): ")
 
-api_key = "3a6d40b17935fe3eb18051086c0f5810"
+api_key = "xxxxxxx"
 
 if forecast == "dzisiaj":
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric&lang=pl"
